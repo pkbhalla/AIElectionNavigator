@@ -1,0 +1,130 @@
+export const electionContent = {
+  election_types: {
+    title: "Types of Elections in India",
+    short: "India holds three main types of elections: Lok Sabha, State Assembly, and Local Body elections.",
+    detailed: "India's democratic structure involves elections at multiple levels. Lok Sabha elections elect Members of Parliament to the lower house of the national legislature. State Legislative Assembly (Vidhan Sabha) elections choose state legislators. Local body elections choose representatives for municipalities, panchayats, and other local governing bodies.",
+    beginner: "Think of it like three layers – national, state, and local. Each layer has its own election.",
+    faqs: [
+      { q: "How often are Lok Sabha elections held?", a: "Every 5 years, unless dissolved earlier by the President on advice of the Prime Minister." },
+      { q: "Can I vote in all three types?", a: "Yes, if your name is on the electoral roll for the respective constituency." },
+    ],
+    tags: ["lok sabha", "assembly", "local body", "types"],
+  },
+  voter_registration: {
+    title: "Voter Registration & Electoral Roll",
+    short: "Citizens aged 18+ can register to vote by enrolling in the Electoral Roll in their constituency.",
+    detailed: "To vote in India, you must be enrolled in the Electoral Roll of your constituency. Registration is done through Form 6 on the NVSP portal or Voter Helpline App. You need to be an Indian citizen, 18+ years old, and a resident of the constituency. The Electoral Registration Officer (ERO) of your area processes your application.",
+    beginner: "Register online at voters.eci.gov.in or use the Voter Helpline App. You'll need a photo ID and address proof.",
+    faqs: [
+      { q: "What documents do I need?", a: "Age proof (birth certificate/class 10 marksheet), address proof, and a passport-size photo." },
+      { q: "Can I register online?", a: "Yes, through the NVSP portal (voters.eci.gov.in) or the Voter Helpline App." },
+      { q: "What is EPIC?", a: "Electoral Photo Identity Card – your voter ID card issued by the Election Commission." },
+    ],
+    tags: ["registration", "voter ID", "EPIC", "NVSP"],
+  },
+  electoral_roll: {
+    title: "Understanding the Electoral Roll",
+    short: "The electoral roll is the official list of all registered voters in a constituency.",
+    detailed: "The electoral roll (voter list) is maintained by the Election Commission of India and updated periodically. It contains your name, relative's name, address, voter ID number, and your part number/serial number. You can verify your name at voters.eci.gov.in or by calling 1950.",
+    beginner: "Check if your name is on the list before election day to avoid surprises at the polling booth.",
+    faqs: [
+      { q: "How do I check my name?", a: "Visit voters.eci.gov.in, the Voter Helpline App, or call 1950." },
+      { q: "My name is missing. What do I do?", a: "File Form 6 immediately with your Electoral Registration Officer. You may not be able to vote in the upcoming election if time has passed." },
+    ],
+    tags: ["electoral roll", "voter list", "verification"],
+  },
+  polling_day: {
+    title: "Polling Day – Step by Step",
+    short: "On polling day, visit your assigned booth with valid ID, verify your name, cast your EVM vote, and leave after VVPAT confirmation.",
+    detailed: "Polling in India is conducted by the Election Commission with strict protocols. Voters must carry their EPIC (voter ID) or any of the 12 alternative documents approved by ECI. The process involves: identifying the correct booth (printed on voter slip), identity verification by polling staff, having your name marked on the register, applying indelible ink on your left forefinger, casting your vote on the EVM, and verifying your vote on the VVPAT.",
+    beginner: "Arrive at your booth, show your ID, get ink on your finger, press the button for your candidate on the EVM, see the VVPAT confirmation, and leave.",
+    faqs: [
+      { q: "Which documents are accepted?", a: "Voter ID, Aadhaar, passport, driving license, PAN card, bank passbook with photo, MNREGA card, and several others as per ECI's approved list." },
+      { q: "What is indelible ink?", a: "A special ink applied to your finger that cannot be washed off for several days – it prevents double voting." },
+      { q: "What if I accidentally press the wrong button?", a: "You cannot change your vote once cast on the EVM." },
+    ],
+    tags: ["polling", "voting", "booth", "ink", "EVM"],
+  },
+  evm_vvpat: {
+    title: "EVM & VVPAT Explained",
+    short: "EVM (Electronic Voting Machine) records your vote electronically. VVPAT lets you visually verify your vote was recorded correctly.",
+    detailed: "The Electronic Voting Machine (EVM) is used in all Indian elections. It has two units: the Control Unit (with polling officer) and the Ballot Unit (with voter). After the officer enables it, you press the blue button next to your candidate's name. The VVPAT (Voter Verifiable Paper Audit Trail) then shows a paper slip with the party symbol and candidate name for 7 seconds before it falls into a sealed compartment. This lets you verify your vote was recorded correctly.",
+    beginner: "Press the blue button → see the VVPAT paper slip for 7 seconds → your vote is recorded. Simple!",
+    faqs: [
+      { q: "Can EVMs be tampered with?", a: "EVMs are standalone machines not connected to the internet. The Election Commission conducts extensive mock polls and audits. They meet rigorous security standards set by IIT experts." },
+      { q: "What is the purpose of VVPAT?", a: "VVPAT provides a paper trail that can be audited if needed, adding transparency to the voting process." },
+      { q: "Who manufactures EVMs?", a: "EVMs are manufactured by Electronics Corporation of India Limited (ECIL) and Bharat Electronics Limited (BEL), both government undertakings." },
+    ],
+    tags: ["EVM", "VVPAT", "electronic voting", "transparency"],
+  },
+  counting: {
+    title: "Counting Day & Result Declaration",
+    short: "After polling, votes are counted at designated counting centres. Results are declared constituency by constituency.",
+    detailed: "Counting begins typically after all phases of polling conclude, at a date announced by the ECI. EVMs are transported in sealed strong rooms under 24/7 security. On counting day: Returning Officers oversee counting at counting centres. Candidates and their counting agents are allowed to observe. EVMs are opened and results tallied. After each round, totals are announced. The candidate with the highest votes wins (First Past The Post system). The Returning Officer declares the winner and issues Form 20.",
+    beginner: "Think of it like counting all the points after a game. The EVM results are tallied round by round until a winner is clear.",
+    faqs: [
+      { q: "When does counting start?", a: "Usually on a day announced by ECI, typically after all polling phases end. Counting starts at 8 AM." },
+      { q: "What is a 'round' in counting?", a: "The total votes are counted in batches called rounds. After each round, partial totals are announced." },
+      { q: "How is the winner decided?", a: "India uses First Past The Post (FPTP) – the candidate with the most votes wins, even without a majority." },
+    ],
+    tags: ["counting", "results", "declaration", "FPTP"],
+  },
+  myth_fact: [
+    {
+      myth: "Someone can see whom I voted for.",
+      fact: "No. The EVM records your vote electronically without any connection to your identity. Voting is completely secret.",
+      category: "Privacy",
+    },
+    {
+      myth: "I can vote without being on the electoral roll if I have a voter ID card.",
+      fact: "Your name must be on the electoral roll of that constituency. A voter ID card alone is not sufficient – your name must be in the voter list.",
+      category: "Eligibility",
+    },
+    {
+      myth: "Voting happens in one day for all of India.",
+      fact: "For large elections like Lok Sabha, voting is held in multiple phases spread over weeks across different states for logistical and security reasons.",
+      category: "Process",
+    },
+    {
+      myth: "EVMs can be hacked remotely.",
+      fact: "EVMs are not connected to any network – no internet, no Bluetooth. They are standalone machines. Independent experts including IIT professors have reviewed and certified their security.",
+      category: "Technology",
+    },
+    {
+      myth: "If I don't vote, my vote goes to the winning party automatically.",
+      fact: "Uncast votes have no effect. They are not counted or assigned to anyone.",
+      category: "Process",
+    },
+    {
+      myth: "NOTA means none of the above wins.",
+      fact: "NOTA (None of the Above) is a valid option but if it gets the most votes, the candidate with the second highest votes does NOT win. A re-election is not automatically triggered – ECI rules govern the outcome.",
+      category: "NOTA",
+    },
+  ],
+  election_lifecycle: [
+    { stage: "Voter List Preparation", phase: "pre", description: "ECI revises and publishes the electoral roll. Citizens check and update their registrations.", icon: "📋" },
+    { stage: "Election Announcement", phase: "pre", description: "The President/Governor issues the notification. ECI announces the schedule including polling date(s) and counting date.", icon: "📢" },
+    { stage: "Nominations", phase: "pre", description: "Candidates file nomination papers with the Returning Officer within the specified period.", icon: "📝" },
+    { stage: "Scrutiny", phase: "pre", description: "Returning Officer examines nomination papers for validity. Invalid nominations are rejected.", icon: "🔍" },
+    { stage: "Withdrawal", phase: "pre", description: "Candidates can withdraw their nominations within the specified period. Final candidate list is published.", icon: "↩️" },
+    { stage: "Campaign Period", phase: "pre", description: "Candidates campaign within Model Code of Conduct rules. No inflammatory speeches, no vote-buying.", icon: "📣" },
+    { stage: "Polling Day", phase: "during", description: "Registered voters cast their votes at designated polling stations using EVMs.", icon: "🗳️" },
+    { stage: "Counting Day", phase: "post", description: "EVMs are unsealed at counting centres. Votes are counted round by round under observation.", icon: "🔢" },
+    { stage: "Result Declaration", phase: "post", description: "Returning Officer declares the winning candidate and issues Form 20. Official results are published.", icon: "🏆" },
+  ],
+};
+
+export const glossary: Record<string, string> = {
+  "ECI": "Election Commission of India – the constitutional body that oversees elections",
+  "EVM": "Electronic Voting Machine – used to cast and record votes electronically",
+  "VVPAT": "Voter Verifiable Paper Audit Trail – prints a paper slip showing your vote for 7 seconds",
+  "EPIC": "Electoral Photo Identity Card – commonly known as Voter ID",
+  "NVSP": "National Voters Service Portal – voters.eci.gov.in for online voter services",
+  "ERO": "Electoral Registration Officer – local officer managing voter registration",
+  "MCC": "Model Code of Conduct – rules binding parties and candidates during election period",
+  "NOTA": "None of the Above – an option to reject all candidates",
+  "FPTP": "First Past The Post – India's voting system where highest-vote-getter wins",
+  "Lok Sabha": "Lower house of India's Parliament – 543 seats elected directly by voters",
+  "Vidhan Sabha": "State Legislative Assembly – elected for state government",
+  "Rajya Sabha": "Upper house of Parliament – indirectly elected, not by direct public vote",
+};
