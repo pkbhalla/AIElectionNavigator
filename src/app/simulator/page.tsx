@@ -110,7 +110,7 @@ export default function SimulatorPage() {
   const isFirst = current === 0;
 
   const next = () => {
-    setCompleted(prev => new Set([...prev, current]));
+    setCompleted(prev => new Set(prev).add(current));
     if (!isLast) setCurrent(current + 1);
   };
 
